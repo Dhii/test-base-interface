@@ -20,6 +20,8 @@ interface ClassTestCaseInterface extends TestCaseInterface
      * Creates an instance of the test subject class.
      *
      * @since [*next-version*]
+     *
+     * @return object A new instance of the test subject class.
      */
     public function createInstance();
 
@@ -27,6 +29,7 @@ interface ClassTestCaseInterface extends TestCaseInterface
      * Gets the name of the subject class.
      *
      * @since [*next-version*]
+     * @string The name of the test subject class.
      */
     public function getClassName();
 
@@ -35,6 +38,8 @@ interface ClassTestCaseInterface extends TestCaseInterface
      * must be a descendant.
      *
      * @since [*next-version*]
+     *
+     * @return string|null The name of the interface or class, or null if not constrained.
      */
     public function getClassType();
 }
