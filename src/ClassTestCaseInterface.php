@@ -41,5 +41,5 @@ interface ClassTestCaseInterface extends TestCaseInterface
      *
      * @return string|null The name of the interface or class, or null if not constrained.
      */
-    public function getClassType();
+    public function getClassAncestor();
 }
