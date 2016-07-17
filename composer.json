@@ -19,5 +19,10 @@
             "url": "https://github.com/Dhii/php-cs-fixer-config.git",
             "type": "git"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Test\\": "src/"
+        }
+    }
 }
